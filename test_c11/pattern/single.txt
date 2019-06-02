@@ -1,0 +1,54 @@
+0000000   #   p   r   a   g   m   a       o   n   c   e  \n  \n   t   e
+0000020   m   p   l   a   t   e       <   t   y   p   e   n   a   m   e
+0000040       T   >  \n   c   l   a   s   s       S   i   n   g   l   e
+0000060   t   o   n  \n   {  \n   p   u   b   l   i   c   :  \n        
+0000100           t   e   m   p   l   a   t   e   <   t   y   p   e   n
+0000120   a   m   e   .   .   .       A   r   g   s   >  \n   
+0000140    s   t   a   t   i   c       T   *       I   n   s   t   a
+0000160   n   c   e   (   A   r   g   s   &   &   .   .   .       a   r
+0000200   g   s   )  \n       {  \n                        
+0000220           i   f   (   m   _   p   I   n   s   t   a   n   c   e
+0000240   =   =   n   u   l   l   p   t   r   )  \n                    
+0000260                               m   _   p   I   n   s   t   a   n
+0000300   c   e       =       n   e   w       T   (   s   t   d   :   :
+0000320   f   o   r   w   a   r   d   <   A   r   g   s   >   (   a   r
+0000340   g   s   )   .   .   .   )   ;  \n  \n                        
+0000360           r   e   t   u   r   n       m   _   p   I   n   s   t
+0000400   a   n   c   e   ;  \n                   }  \n  \n   
+0000420    s   t   a   t   i   c       T   *       G   e   t   I   n
+0000440   s   t   a   n   c   e   (   )  \n       {  \n 
+0000460          i   f       (   m   _   p   I   n
+0000500   s   t   a   n   c   e       =   =       n   u   l   l   p   t
+0000520   r   )  \n               t
+0000540   h   r   o   w       s   t   d   :   :   l   o   g   i   c   _
+0000560   e   r   r   o   r   (   "   t   h   e       i   n   s   t   a
+0000600   n   c   e       i   s       n   o   t       i   n   i   t   ,
+0000620       p   l   e   a   s   e       i   n   i   t   i   a   l   i
+0000640   z   e       t   h   e       i   n   s   t   a   n   c   e    
+0000660   f   i   r   s   t   "   )   ;  \n  \n      
+0000700     r   e   t   u   r   n       m   _   p   I   n   s   t
+0000720   a   n   c   e   ;  \n       }  \n  \n            
+0000740       s   t   a   t   i   c       v   o   i   d       D   e   s
+0000760   t   r   o   y   I   n   s   t   a   n   c   e   (   )  \n    
+0001000               {  \n                                   d   e   l
+0001020   e   t   e       m   _   p   I   n   s   t   a   n   c   e   ;
+0001040  \n                                   m   _   p   I   n   s   t
+0001060   a   n   c   e       =       n   u   l   l   p   t   r   ;  \n
+0001100                   }  \n  \n   p   r   i   v   a   t   e   :  \n
+0001120                                   S   i   n   g   l   e   t   o
+0001140   n   (   v   o   i   d   )   ;  \n                            
+0001160       v   i   r   t   u   a   l       ~   S   i   n   g   l   e
+0001200   t   o   n   (   v   o   i   d   )   ;  \n                    
+0001220               S   i   n   g   l   e   t   o   n   (   c   o   n
+0001240   s   t       S   i   n   g   l   e   t   o   n   &   )   ;  \n
+0001260                                   S   i   n   g   l   e   t   o
+0001300   n   &       o   p   e   r   a   t   o   r   =   (   c   o   n
+0001320   s   t       S   i   n   g   l   e   t   o   n   &   )   ;  \n
+0001340   p   r   i   v   a   t   e   :  \n                   s   t   a
+0001360   t   i   c       T   *       m   _   p   I   n   s   t   a   n
+0001400   c   e   ;  \n   }   ;  \n  \n   t   e   m   p   l   a   t   e
+0001420       <   c   l   a   s   s       T   >       T   *           S
+0001440   i   n   g   l   e   t   o   n   <   T   >   :   :   m   _   p
+0001460   I   n   s   t   a   n   c   e       =       n   u   l   l   p
+0001500   t   r   ;  \n
+0001504
