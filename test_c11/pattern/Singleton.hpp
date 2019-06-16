@@ -1,14 +1,16 @@
-﻿#pragma once
+﻿#include <thread>
+#include <mutex>
+#include "NonCopyable.hpp"
 
 template <typename T>
-class Singleton
+class Singleton : NonCopyable
 {
 public:
     template<typename... Args>
 	static T* Instance(Args&&... args) {
-        if(m_pInstance==nullptr)
-            m_pInstance = new T(std::forward<Args>(args)...);
-
+        if(m_pInstance==nullptr) {
+			std::call_once(flag, [&]() { m_pInstance = new T(std::forward<Args>(args)...); });
+		}
         return m_pInstance;
     }
 	
@@ -27,10 +29,13 @@ public:
 private:
         Singleton(void);
         virtual ~Singleton(void);
-        Singleton(const Singleton&);
-        Singleton& operator=(const Singleton&);
 private:
+    static std::once_flag flag;
     static T* m_pInstance;
 };
 
-template <class T> T*  Singleton<T>::m_pInstance = nullptr;
+template <typename T> 
+std::once_flag Singleton<T>::flag;
+
+template <typename T> 
+T* Singleton<T>::m_pInstance = nullptr;

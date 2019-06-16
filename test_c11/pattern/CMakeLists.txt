@@ -5,6 +5,7 @@ set_source_files_properties(
     Singleton.hpp
     test_observer.cpp
     Observer.hpp
+    Observer.cc
     test_visitor.cpp
     Visitor.hpp
     test_command.cpp
@@ -24,3 +25,4 @@ add_executable(test_command test_command.cpp Command.hpp )
 
 add_executable(test_object test_object.cpp ObjectPool.hpp )
 
+add_executable(safe_observer Observer.cc )
