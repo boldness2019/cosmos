@@ -34,6 +34,10 @@ int main(void)
 	std::unordered_map<int, std::string> m2 = { { 1, "foo" }, { 2, "bar" }, { 3, "baz" } };
 	std::unordered_map<int, std::string> m3 = m2;
 	std::unordered_map<int, std::string> m4 = std::move(m2);
+	for (auto it : m4) {
+		std::cout << it.first << ", ";
+		std::cout << it.second << std::endl;
+	}
 
 	std::vector<std::pair<std::bitset<8>, int>> v = { { 0x12, 1 }, { 0x01, -1 } };
 	std::unordered_map<std::bitset<8>, double> m5(v.begin(), v.end());

@@ -48,6 +48,7 @@ void TestBus() {
 	Truck truck;
 	subject.SendReq(Topic);
 	subject.SendReq("");
+	
 	g_bus.Remove<void, int>();
 	subject.SendReq("");
 }
